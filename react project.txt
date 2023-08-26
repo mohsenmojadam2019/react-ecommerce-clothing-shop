@@ -1,0 +1,122 @@
+ npm i -D tailwindcss
+ npx tailwindcss init
+ npm run start
+
+
+/////////////////////////////
+tailwind.config.js
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+//////////////////////////////
+index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/////////////////////////////////
+https://tailblocks.cc/
+/////////////////////////////////
+rafce
+
+/////////////////////////////مرتب سازی 
+format document        shift  alt  f
+ctrl f    renameAll
+///////////////////////////// tilwind
+عنوان بزرگ شود  بولد شود وسط بیفتد نسبت به پایین ۲۰ تا فاصله داشته باشد 
+<h2 className='text-4xl font-bold text-center mt-20'>Products</h2>
+عکس فیت کن
+object-contain
+مارجین سمت راست ۲ تا فاصله بگیر 
+mr-2
+/////////////////////////////////
+https://fakestoreapi.com/docs
+/////////////////////////////////
+"https://dummyimage.com/400x400"
+/////////////////////////////////
+لینک دهی
+Link to={'/'}
+/////////////////////////////////
+هدر نوبار
+import { Link } from 'react-router-dom'
+
+const navigations = [
+
+  {
+    name: "Home",
+    path: "/"
+  },
+  {
+    name: "Products",
+    path: "/products"
+  },
+  {
+    name: "About",
+    path: "/about"
+  },
+  {
+    name: "Contact",
+    path: "/contact"
+  },
+]
+
+return(
+
+  {
+            navigations.map((navigations) => {
+              return (
+                <Link to={navigations.path} className='mr-5 hover:text-gray-900'>{navigations.name}</Link>
+              )
+            })
+          })
+/////////////////////////////////
+Build a Responsive Ecommerce App FASTER with React JS in 2023 - Reactjs Ecommerce Project
+46
+/////////////////////////////////
+پراپسی که گرفتیم نمایش بدیم
+const FeatureCard = (cards =[]) => {
+    return (
+
+   {
+    cards?.map((card)=>{
+        return(
+            
+        )
+    })
+  }
+)
+/////////////////////////////////
+وقتی چند تا کامپوننت داریم باید داخل پوشه بنام ماژول بره 
+
+/////////////////////////////////
+/////////////////////////////////
+/////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
